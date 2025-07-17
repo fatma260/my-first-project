@@ -81,11 +81,19 @@
           <label for="email"> enter your email </label>
             <input type="email" id="email" name="email" required>
           </label>
-          <label for="female">female</label>
-            <input type="radio" id="female" name="gender">
-          <label for="male">male</label>
-            <input type="radio" id="male" name="gender">
-            <input type="submit" name="submit">
+          <fieldset>
+            <legend>select your gender</legend>
+            <label for="female">female</label>
+              <input type="radio" id="female" name="gender" value="female">
+            <label for="male">male</label>
+              <input type="radio" id="male" name="gender" value="male">
+          </fieldset>
+          <fieldset>
+            <legend>what is your favorite genre?</legend>
+            <label for="Horror">Horror</label>
+            <input id="Horror" type="checkbox" name="genre" value="Horror">
+          </fieldset>
+          <input type="submit" name="submit">
         </form>
       </section>
     </main>
