@@ -1,0 +1,10 @@
+#adress, figcaption {
+  text-align: center;
+}
+#main-page {
+  background-color: rgb(217, 243, 243);
+  width: 80%;
+}
+img {
+  width: 300px;
+}

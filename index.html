@@ -1,104 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
     <meta charset="UTF-8">
     <title>My First GitHub Project</title>
+    <link href="style.css" rel="stylesheet">
   </head>
   <body>
-    <main>
-      <h1>Books shop</h1>
-      <p>this is a book shop to sell books</p>
-      <section>
-        <figure>
-          <img
-            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1739185284i/227850315.jpg"
-            width="300px"
-          />
-          <figcaption>الواقعه الخاصة بأموات أهله</figcaption>
-        </figure>
-        <p>
-          لزياره صفحه الكتاب
-          <a
-            href="https://www.goodreads.com/book/show/227850315"
-            target="_blank"
-            >اضغط على اللينك</a
-          >
-        </p>
-      </section>
-      <section>
-        <figure>
-          <img
-            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1519124542i/34696176.jpg"
-            width="300px"
-          />
-          <figcaption>لا تقولى إنك خائفة</figcaption>
-        </figure>
-        <p>
-          لزياره صفحه الكتاب
-          <a href="https://www.goodreads.com/book/show/34696176" target="_blank"
-            >اضغط على اللينك</a
-          >
-        </p>
-      </section>
-      <section>
-        <figure>
-          <img
-            src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646581105i/59587850.jpg"
-            width="300px"
-          />
-          <figcaption>تغريبة القافر</figcaption>
-        </figure>
-        <p>
-          لزياره صفحه الكتاب
-          <a href="https://www.goodreads.com/book/show/59587850" target="_blank"
-            >اضغط على اللينك</a
-          >
-        </p>
-      </section>
-      <section>
-        <h2>الأكثر مبيعا</h2>
-        <ol><strong>
-          <li>صلاة القلق</li>
-          <li>أولاد الناس</li>
-          <li>واحة الغروب</li>
-          </strong>
-        </ol>
-        <h2>أهم المؤلفين</h2>
-        <ul><strong>
-          <li>نجيب محفوظ</li>
-          <li>بهاء طاهر</li>
-          <li>بلال فضل</li>
-          </strong>
-        </ul>
-      </section>
-      <!--add form section-->
-      <section>
-        <form action="register">
+    <div id="main-page">
+      <main>
+        <div id="adress">
+        <h1>Books shop</h1>
+        <p>this is a book shop to sell books</p>
+        </div>
+        <section>
+          <figure>
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1739185284i/227850315.jpg"
+            />
+            <figcaption>الواقعه الخاصة بأموات أهله</figcaption>
+          </figure>
+          <p>
+            لزياره صفحه الكتاب
+            <a
+              href="https://www.goodreads.com/book/show/227850315"
+              target="_blank"
+              >اضغط على اللينك</a
+            >
+          </p>
+        </section>
+        <section>
+          <figure>
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1519124542i/34696176.jpg"
+              
+            />
+            <figcaption>لا تقولى إنك خائفة</figcaption>
+          </figure>
+          <p>
+            لزياره صفحه الكتاب
+            <a href="https://www.goodreads.com/book/show/34696176" target="_blank"
+              >اضغط على اللينك</a
+            >
+          </p>
+        </section>
+        <section>
+          <figure>
+            <img
+              src="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1646581105i/59587850.jpg"
+              
+            />
+            <figcaption>تغريبة القافر</figcaption>
+          </figure>
+          <p>
+            لزياره صفحه الكتاب
+            <a href="https://www.goodreads.com/book/show/59587850" target="_blank"
+              >اضغط على اللينك</a
+            >
+          </p>
+        </section>
+        <section>
+          <h2>الأكثر مبيعا</h2>
+          <ol><strong>
+            <li>صلاة القلق</li>
+            <li>أولاد الناس</li>
+            <li>واحة الغروب</li>
+            </strong>
+          </ol>
+          <h2>أهم المؤلفين</h2>
+          <ul><strong>
+            <li>نجيب محفوظ</li>
+            <li>بهاء طاهر</li>
+            <li>بلال فضل</li>
+            </strong>
+          </ul>
+        </section>
+        <!--add form section-->
+        <section>
+          <form action="register">
 
-          <label for="full-name">enter your full name </label>
-            <input type="text" id="full-name" name="full-name"  placeholder="type your name" required>
-          <label for="password"> password </label>
-            <input type="password" id="password" name="password" required>
-          <label for="email"> enter your email </label>
-            <input type="email" id="email" name="email" required>
-          </label>
-          <fieldset>
-            <legend>select your gender</legend>
-            <label for="female">female</label>
-              <input type="radio" id="female" name="gender" value="female">
-            <label for="male">male</label>
-              <input type="radio" id="male" name="gender" value="male">
-          </fieldset>
-          <fieldset>
-            <legend>what is your favorite genre?</legend>
-            <label for="Horror">Horror</label>
-            <input id="Horror" type="checkbox" name="genre" value="Horror">
-          </fieldset>
-          <input type="submit" name="submit">
-        </form>
-      </section>
-    </main>
+            <label for="full-name">enter your full name </label>
+              <input type="text" id="full-name" name="full-name"  placeholder="type your name" required>
+            <label for="password"> password </label>
+              <input type="password" id="password" name="password" required>
+            <label for="email"> enter your email </label>
+              <input type="email" id="email" name="email" required>
+            </label>
+            <fieldset>
+              <legend>select your gender</legend>
+              <label for="female">female</label>
+                <input type="radio" id="female" name="gender" value="female">
+              <label for="male">male</label>
+                <input type="radio" id="male" name="gender" value="male">
+            </fieldset>
+            <fieldset>
+              <legend>what is your favorite genre?</legend>
+              <label for="Horror">Horror</label>
+              <input id="Horror" type="checkbox" name="genre" value="Horror">
+            </fieldset>
+            <input type="submit" name="submit">
+          </form>
+        </section>
+      </main>
+    </div>
   </body>
+  
   <footer>
     <p>copy right - bookstore</p>
   </footer>
